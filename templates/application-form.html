@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Skills-Web</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+   <h1>Hello!</h1>
+    <h4> Please fill out the following form: </h4>
+
+    <form>
+    <label for="field-firstname"> First Name: </label>
+    <input type="text" name="firstname" class="boxes"><br>
+
+    <label for="field-lastname" id="lastname"> Last Name: </label>
+    <input type="text" name="lastname" class="boxes"><br>
+
+    <label for="field-salaryrequirement"> Enter your salary requirement: </label>
+    <input type="text" name="salaryrequirement" class="boxes"><br>
+
+     <label for="field-jobrequirement"> Which job are you applying for? </label>
+    <input type="text" name="jobrequirement" class="boxes">
+    <ul>
+        <li> Software Engineer </li>
+        <li> QA Engineer </li>
+        <li> Product Manager </li>
+    </ul>
+    </form>  
+
+       <!-- </form> -->
+    <form action="/application" method="POST">
+        <input type="submit" class="boxes">
+</body>
+</html>
