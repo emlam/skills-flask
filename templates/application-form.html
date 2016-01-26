@@ -9,11 +9,11 @@
    <h1>Hello!</h1>
     <h4> Please fill out the following form: </h4>
 
-<form>
-    <label for="firstname"> First Name: </label>
+<form action="/application-response" method="POST">
+    <label for="field-firstname"> First Name: </label>
     <input type="text" name="firstname" class="boxes"><br>
 
-    <label for="field-lastname" id="lastname"> Last Name: </label>
+    <label for="lastname" id="field-lastname"> Last Name: </label>
     <input type="text" name="lastname" class="boxes"><br>
 
     <label for="field-salaryrequirement"> Enter your salary requirement: </label>
@@ -26,9 +26,7 @@
         <li> QA Engineer </li>
         <li> Product Manager </li>
     </ul>
-    </form>  
-
-<form action="/application-response" method="POST">
+    
     <input type="submit" class="boxes">
 </form>
 </body>

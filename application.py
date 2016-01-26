@@ -17,10 +17,11 @@ def application_page():
 def application_response():
     """Shows the application response page form."""
 
-    input_fname = request.args.get("firstname")
-    input_lname = request.args.get("lastname")
-    input_jobreq = request.args.get("jobrequirement")
-    input_salaryreq = request.args.get("salaryrequirement")
+    input_fname = request.form.get("firstname")
+    # print input_fname
+    input_lname = request.form.get("lastname")
+    input_jobreq = request.form.get("jobrequirement")
+    input_salaryreq = request.form.get("salaryrequirement")
 
     return render_template("application-response.html",
                         firstname=input_fname,
