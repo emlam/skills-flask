@@ -2,6 +2,16 @@ from flask import Flask, render_template,request
 
 app = Flask(__name__)
 
+@app.route('/')
+def home_page():
+    """Shows the home page."""
+
+    return render_template("index.html")
+    # Alternately, we could make this a Jinja template in `templates/`
+    # and return that result of rendering this, like:
+    #
+    # return render_template("index.html")
+
 
 @app.route('/application')
 def application_page():
